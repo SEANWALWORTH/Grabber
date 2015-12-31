@@ -35,7 +35,6 @@
             this.lblPic = new System.Windows.Forms.Label();
             this.lblVid = new System.Windows.Forms.Label();
             this.bwCopy = new System.ComponentModel.BackgroundWorker();
-            this.cbPhone = new System.Windows.Forms.CheckBox();
             this.ddlPhone = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
@@ -101,17 +100,6 @@
             this.bwCopy.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bwCopy_DoWork);
             this.bwCopy.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.bwCopy_RunWorkerCompleted);
             // 
-            // cbPhone
-            // 
-            this.cbPhone.AutoSize = true;
-            this.cbPhone.Location = new System.Drawing.Point(27, 177);
-            this.cbPhone.Name = "cbPhone";
-            this.cbPhone.Size = new System.Drawing.Size(97, 17);
-            this.cbPhone.TabIndex = 8;
-            this.cbPhone.Text = "Backup Phone";
-            this.cbPhone.UseVisualStyleBackColor = true;
-            this.cbPhone.CheckedChanged += new System.EventHandler(this.cbPhone_CheckedChanged);
-            // 
             // ddlPhone
             // 
             this.ddlPhone.FormattingEnabled = true;
@@ -129,7 +117,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(595, 256);
             this.Controls.Add(this.ddlPhone);
-            this.Controls.Add(this.cbPhone);
             this.Controls.Add(this.lblVid);
             this.Controls.Add(this.lblPic);
             this.Controls.Add(this.lblStatus);
@@ -137,7 +124,7 @@
             this.Controls.Add(this.ddlDrive);
             this.Controls.Add(this.btnGo);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Media Grabber";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -153,7 +140,6 @@
         private System.Windows.Forms.Label lblPic;
         private System.Windows.Forms.Label lblVid;
         private System.ComponentModel.BackgroundWorker bwCopy;
-        private System.Windows.Forms.CheckBox cbPhone;
         private System.Windows.Forms.ComboBox ddlPhone;
     }
 }

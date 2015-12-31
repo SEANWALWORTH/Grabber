@@ -220,10 +220,5 @@ namespace Grabber
             btnGo.Enabled = !bwCopy.IsBusy;
             lblStatus.Text = "Copy complete!";
         }
-
-        private void cbPhone_CheckedChanged(object sender, EventArgs e)
-        {
-            ddlPhone.Visible = cbPhone.Checked;
-        }
     }
 }
